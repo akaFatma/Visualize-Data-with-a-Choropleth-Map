@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha512-4UKI/XKm3xrvJ6pZS5oTRvIQGIzZFoXR71rRBb1y2N+PbwAsKa5tPl2J6WvbEvwN3TxQCm8hMzsl/pO+82iRlg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <!-- TopoJSON is an extension of GeoJSON that encodes topology. Rather than representing geometries discretely, geometries in TopoJSON files are stitched together from shared line segments called arcs. -->
+    <title>CHOROPLETH MAP</title>
+</head>
+<body>
+    <h1 id="title">United States Educational Attainment </h1>
+    <div id="description">Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014)
+    </div>
+    <div id="tooltip"></div>
+    <svg id="chart"> </svg>
+    <svg id="legend">
+        <g>
+            <rect  x="10" y="0" width="30" height="30" fill="Lightgreen"></rect>
+            <text x="60" y="20" fill="white">Less than 15%</text>
+        </g>
+        <g>
+            <rect x="10" y="40" width="30" height="30" fill="Limegreen"></rect>
+            <text x="60" y="60" fill="white">Less than 30%</text>
+        </g>
+        <g>
+            <rect x="10" y="80" width="30" height="30" fill="Orange"></rect>
+            <text x="60" y="100" fill="white">30% to 45%</text></g>
+        <g>
+            <rect x="10" y="120" width="30" height="30" fill="green"></rect>
+            <text x="60" y="140" fill="white">More than 45%</text>
+        </g>
+    </svg>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    <script src="./main.js"></script> 
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>  
+</body>
+</html>
